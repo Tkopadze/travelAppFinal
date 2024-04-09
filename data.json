@@ -1,0 +1,245 @@
+{
+  "cardsData": [
+    {
+      "id": 1,
+      "photo": "../../../.././src/image2.svg",
+      "title": "Card 1",
+      "description": "This is card 1 description."
+    },
+    {
+      "id": 2,
+      "photo": "../.././src/image21.svg",
+      "title": "Card 2",
+      "description": "This is card 2 description."
+    },
+    {
+      "id": 3,
+      "photo": "../.././src/image22.svg",
+      "title": "Card 3",
+      "description": "This is card 3 description."
+    },
+    {
+      "id": 4,
+      "photo": "../.././src/image23.svg",
+      "title": "Card 4",
+      "description": "This is card 4 description."
+    }
+  ],
+  "sliderCardsData": [
+    {
+      "id": 1,
+      "photo": "../.././src/image5.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 2,
+      "photo": "../.././src/image5italy.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 3,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 4,
+      "photo": "../.././src/image5egypt.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 5,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 6,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 7,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 8,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 9,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 10,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 11,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    },
+    {
+      "id": 12,
+      "photo": "../.././src/image5paris.svg",
+      "country": "Country 1",
+      "city": "City 1",
+      "adults": 2,
+      "children": 2,
+      "price": 1990
+    }
+  ],
+  "blogCardsData": [
+    {
+      "id": 1,
+      "photo": "../.././src/image6blog1.svg",
+      "description": "Description for Blog Post 1"
+    },
+    {
+      "id": 2,
+      "photo": "../.././src/image6blog2.svg",
+      "description": "Description for Blog Post 2"
+    },
+    {
+      "id": 3,
+      "photo": "../.././src/image6blog3.svg",
+      "description": "Description for Blog Post 3"
+    },
+    {
+      "id": 4,
+      "photo": "../.././src/image6blog1.svg",
+      "description": "Description for Blog Post 4"
+    },
+    {
+      "id": 5,
+      "photo": "../.././src/image6blog2.svg",
+      "description": "Description for Blog Post 5"
+    },
+    {
+      "id": 6,
+      "photo": "../.././src/image6blog3.svg",
+      "description": "Description for Blog Post 6"
+    }
+
+  ],
+  "FlightsCards" :[
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+},
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+},
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+},
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+},
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+},
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+},
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+},
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+},
+{
+  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+  "Name": "Lufthansa",
+  "TakeOff":"12:00",
+  "Landing":"19:00",
+  "Price":"900$"
+
+}
+  ]
+}

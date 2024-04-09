@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./flights.css">
+</head>
+
+<body>
+  <header>
+    <div class=" header backgroundImg">
+      <nav class="stickyHeaderNav transparent">
+        <a href="index.html">
+          <h1>ExploreEra</h1>
+        </a>
+        <a href="#" class="burgerMenu"></a>
+        <ul>
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">About us</a>
+          </li>
+          <li>
+            <a href="">Blogs</a>
+          </li>
+          <li>
+            <a href="">Our services</a>
+          </li>
+          <li>
+            <a href="">Our offers</a>
+          </li>
+          <li>
+            <a href=""> <img src="../../src/User.svg" alt=""> </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="popup-container" id="popup-container">
+      <div class="popup-content">
+        <a href="signIn.html">Sign In</a>
+        <a href="signUp.html">Sign Up</a>
+        <nav class="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#offers">Our Offers</a></li>
+          </ul>
+        </nav>
+        <span class="close-btn" id="close-btn">X</span>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+  </header>
+  <main>
+    <section class="navigation">
+      <div class="container">
+        <nav>
+          <ul class="navigation-list">
+            <li>
+              <button class="active">Flights</button>
+            </li>
+            <li>
+              <button>Stays</button>
+            </li>
+            <li>
+              <button>Car rentals</button>
+            </li>
+            <li>
+              <button>Cruises</button>
+            </li>
+            <li>
+              <button>Attractions</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="section-filter">
+      <div class="filter-dropdowns">
+        <div class="dropdown">
+          <button class="dropbtn">One Way<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content">
+            <a href="#" id="roundtrip">Roundtrip </a>
+            <a href="#" id="oneway">One Way</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">1 Adult<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content">
+            <a href="#" id="roundtrip">1 adults</a>
+            <a href="#" id="oneway">2 adults</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Economy <img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content">
+            <a href="#" id="roundtrip">Economy</a>
+            <a href="#" id="oneway">business Class</a>
+          </div>
+        </div>
+      </div>
+      <div class="filter-inputs">
+        <input type="text" placeholder="From Tbilisi" class="from">
+        <input type="text" placeholder="To Paris" class="To">
+        <input type="date" placeholder="calendar" class="calendar">
+        <button class="search">search</button>
+      </div>
+    </section>
+
+    <section class="section-flights">
+      <sidebar>
+        <div class="quick-search">
+          <p class="cheapest">Cheapest</p>
+          <p class="quickest">Quickest</p>
+          <p class="best">best</p>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Stops<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content show">
+            <label>
+              <input type="radio" name="flightType" value="direct"> Direct
+            </label>
+            <label>
+              <input type="radio" name="flightType" value="oneStop"> One-stop
+            </label>
+            <label>
+              <input type="radio" name="flightType" value="twoStops"> Two-stops
+            </label>
+          </div>
+        </div>
+
+        <div class="dropdown  ranges">
+          <button class="dropbtn">Times<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content Times filters show">
+            <div class="text">Take off -Tbilisi</div>
+            <div class="hours">
+              <span class="starthour">12:00</span>
+              <span class="endhour">24:00</span>
+            </div>
+            <div class="range">
+              <div class="selector1"></div>
+              <div class="bar"></div>
+              <div class="selector2"></div>
+            </div>
+            <div class="text">Take off -Paris</div>
+            <div class="hours">
+              <span class="starthour">12:00</span>
+              <span class="endhour">24:00</span>
+            </div>
+            <div class="range">
+              <div class="selector1"></div>
+              <div class="bar"></div>
+              <div class="selector2"></div>
+            </div>
+
+
+          </div>
+       
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Airlines<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content">
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">AirPorts<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content">
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Duration<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content show">
+            <div class="hours">
+              <span class="starthour">12:00</span>
+              <span class="endhour">24:00</span>
+            </div>
+            <div class="range">
+              <div class="selector1"></div>
+              <div class="bar"></div>
+              <div class="selector2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Price<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content show">
+            <div class="hours">
+              <span class="starthour">700$</span>
+              <span class="endhour">3000$</span>
+            </div>
+            <div class="range">
+              <div class="selector1"></div>
+              <div class="bar"></div>
+              <div class="selector2"></div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Price<img src="../../src/arrowdown.svg" alt=""></button>
+          <div class="dropdown-content show">
+            <div class="hours">
+              <span class="starthour">700$</span>
+              <span class="endhour">3000$</span>
+            </div>
+            <div class="range">
+              <div class="selector1"></div>
+              <div class="bar"></div>
+              <div class="selector2"></div>
+            </div>
+          </div>
+        </div>
+         
+
+      </sidebar>
+      <div id="card-container"></div>
+    </section>
+
+  </main>
+  <script type="module" src="./flights.js" defer></script>
+
+</body>
+
+</html>

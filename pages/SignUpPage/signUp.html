@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../HomePage/style.css" />
+</head>
+<body>
+    <header>
+    <div class="header backgroundImg">
+      <nav class="stickyHeaderNav transparent">
+        <a href="./../HomePage/index.html"><h1>ExploreEra</h1></a>
+        <a href="#" class="burgerMenu"></a>
+      </nav>
+  
+  
+    <div class="popup-container" id="popup-container">
+      <div class="popup-content">
+        <a href="./../SignInPage/signIn.html">Sign In</a>
+        <a href="./../SignUpPage/signUp.html">Sign Up</a>
+        <nav class="navigation">
+          <ul>
+            <li><a href="./../HomePage/index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="./../FlightsPage/flights.html">Our Services</a></li>
+            <li><a href="#offers">Our Offers</a></li>
+          </ul>
+        </nav>
+        <span class="close-btn" id="close-btn">X</span>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+  </header>
+      <main class="main">
+  
+        <div class="container">
+          <form id="signUpForm">
+            <div class="form-group">
+              <label for="FirstName">First name</label>
+              <input type="text" id="username" name="username" placeholder="Enter your first name"  required>
+            </div>
+         
+            <div class="form-group">
+              <label for="lastName">Last name</label>
+              <input type="text" id="username" name="username" placeholder="Enter your last name"  required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" id="username" name="username" placeholder="Enter your email address"  required>
+            </div>
+          
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="Password must contain at least 8 characters, one uppercase letter, and one number" required>
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password:</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" minlength="8" pattern="(?=.*\d)(?=.*[A-Z]).{8,}" title="Password must contain at least 8 characters, one uppercase letter, and one number" required>
+            </div>
+            <button type="submit">Continue</button>
+          
+        
+          </form>
+          <div class="borderLine">
+            <hr class="borderlineHr"><p class="borderLine Text">Or continue with</p><hr class="borderlineHr">
+          </div>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><div class="fab fa-facebook"></div></a>
+            <a href="#" class="social-icon"><div class="fab fa-apple"></div></a>
+            <a href="#" class="social-icon"><div class="fab fa-google"></div></a>
+            <a href="#" class="social-icon"><div class="fab fa-gmail"></div></a>
+          </div>
+          <hr class="line">
+          <p class="terms">By signing in or creating an account, you agree with our<a href="#" id="terms-link"> Terms & Conditions</a>  and <a href="#" id="privacy-link">Privacy Policy</a>.</p>
+        </div>
+        </main>
+      
+      <footer>
+        <div class="footerdiv">
+          <div class="footerWrap1">
+            <div class="footerlinks">
+              <div class="desc">
+                <h3>ExploreEra</h3>
+                <p>Travel agency which helps you to plan your perfect holidays</p>
+                <h4>Follow us</h4>
+                <div class="logos">
+                  <a href=""><img src="./../../src/Vector (12).svg" alt="" /></a>
+                  <a href=""><img src="./../../src//Vector(13).svg" alt="" /></a>
+                  <a href=""><img src="./../../src//Vector(12).svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <nav class="footerNav">
+              <h4>Links</h4>
+              <a href="" class="Home">Home</a>
+              <a href="" class="aboutUs">About us</a>
+              <a href="" class="blogs">Blogs</a>
+              <a href="" class="ourServices">Our services</a>
+              <a href="" class="ourOffers">Our offers</a>
+            </nav>
+          </div>
+  
+          <div class="footerWrap2">
+            <div class="contact">
+              <h4>Contact us</h4>
+              <p>exploreera@gmail.com</p>
+              <p>555111222</p>
+            </div>
+            <div class="subscribe">
+              <h3>Subscribe news</h3>
+              <div class="input-container">
+                <input type="email" class="email-input" placeholder="email" />
+                <button class="action-button"></button>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <div class="copyright">Copyright 2024</div>
+      </footer>
+     <script type="module" src="./signUp.js" defer></script>
+    </body>
+  </html>
+
+  <div id="terms-popup" >
+    <h2>Terms and conditions</h2>
+    <p>Before you use our website or services, please carefully read the following Terms and Conditions. By accessing or using our platform, you agree to comply with and be bound by these terms. If you do not agree with any part of these terms, please do not use our services. Your privacy is important to us. Please review our Privacy Policy to understand how we collect, use, and disclose information about you. By using our services, you consent to our privacy practices.</p>
+  
+    <h2>Privacy Policy</h2>
+    <p>We may collect personal information, such as your name, email address, and other details, when you register an account, make a purchase, or interact with our services. We also automatically collect certain information, such as IP addresses, browser type, and usage patterns, through cookies and similar technologies. Our website may contain links to third-party websites or services.</p>
+  
+  <button class="termsBtn" id="termsBtn">I agree</button>
+
+</div>

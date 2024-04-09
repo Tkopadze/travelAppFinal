@@ -1,0 +1,323 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #424244;
+  text-decoration: none;
+}
+section,
+nav {
+  margin: 0px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #eae9e9;
+}
+
+.stickyHeaderNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.transparent {
+  background-color: transparent; /* Assuming transparent background */
+}
+
+.stickyHeaderNav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.stickyHeaderNav ul li {
+  margin: 0 10px;
+}
+
+.stickyHeaderNav ul li:last-child {
+  margin-right: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px 170px;
+  gap: 30px;
+}
+.navigation {
+  height: 58px;
+  margin-top: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start; /* Aligns container to the start */
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+.navigation-list li {
+  margin-right: 10px;
+}
+
+.navigation-list button {
+  width: 140px;
+  height: 58px;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  background-color: transparent;
+  color: #000; /* Default color */
+}
+
+.navigation-list button.active {
+  background-color: #ff6700; /* Active color */
+  color: #fff; /* Text color when active */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  margin: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
+}
+
+.filter-inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.filter-inputs input[type="text"],
+.filter-inputs input[type="date"],
+.filter-inputs button {
+  flex: 1 1 auto;
+  padding: 0;
+  height: 40px; /* Adjust as needed */
+  border: none;
+  border: 2px solid #ff6700;
+  border-radius: 20px;
+  height: 70px;
+}
+
+.filter-inputs button {
+  background-color: #ff6700;
+  cursor: pointer;
+  margin: 0px;
+}
+sidebar {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  width: 15%;
+}
+sidebar .dropdown {
+  width: 100%;
+}
+.section-flights {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.section-flights .show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+  box-shadow: none;
+}
+.section-flights .dropdown-content * {
+  margin: 0px;
+}
+
+.hours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.range {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+  align-items: center;
+}
+.selector1,
+.selector2 {
+  display: block;
+  min-width: 20px;
+  min-height: 20px;
+  border: 1px solid #ff6700;
+  border-radius: 50%;
+}
+.bar {
+  width: max-content;
+  height: 2px;
+  background: #ff6700;
+  min-width: 90%;
+}
+.quick-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-height: 100px;
+  flex-shrink: 3;
+  width: 100%;
+  margin: 0px;
+}
+.quick-search p {
+  margin-left: 0px;
+}
+.cheapest,
+.quickest {
+  border-bottom: 1.5px solid #ff6700;
+}
+#card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0px;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 1180px;
+  padding: 20px;
+  height: 192px;
+  flex: 0 2 auto;
+  gap: 20px;
+}
+.card .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0px;
+  width: 50%;
+}
+.hour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 10%;
+}
+.middle .bar {
+  min-width: unset;
+  width: 180px;
+}
+/* Style for logo */
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+  margin: 0px;
+}
+
+/* Style for name */
+.name {
+  margin: 0;
+}
+
+/* Style for sliders */
+input[type="range"] {
+  width: 100%;
+}
+
+/* Style for labels */
+label {
+  display: inline-block;
+  width: 80px;
+  margin-right: 10px;
+}
+
+/* Style for price */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style for details button */
+.details {
+  background-color: #ff8c3e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.burgerMenu,
+.popup-container {
+  display: none;
+}
+
+.burgerMenu {
+  background-image: url(../.././src/Hamburger_LGblack.svg);
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+}

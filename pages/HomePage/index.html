@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header backgroundImg">
+        <nav class="stickyHeaderNav transparent">
+          <a href="index.html"><h1>ExploreEra</h1></a>
+          <a href="#" class="burgerMenu"></a>
+        </nav>
+
+        <div class="offerCard">
+          <div class="offerText">
+            <h3>Visit Mountains In</h3>
+            <h2>ITALY</h2>
+          </div>
+          <button class="offerBtn">see offer</button>
+        </div>
+      </div>
+
+      <div class="popup-container" id="popup-container">
+        <div class="popup-content">
+          <a href="./../SignInPage/signIn.html">Sign In</a>
+          <a href="./../SignUpPage/signUp.html">Sign Up</a>
+          <nav class="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#offers">Our Offers</a></li>
+            </ul>
+          </nav>
+          <span class="close-btn" id="close-btn">X</span>
+        </div>
+      </div>
+      <div class="overlay" id="overlay"></div>
+    </header>
+    <main>
+      <section class="booking">
+        <div class="bookin title">
+          <h2>Discover Our Services</h2>
+          <p>
+            ExploreEra provides a one-stop solution for individuals seeking
+            well-planned journeys. These services include expert advice on
+            destination selection, flight and accommodation bookings, and
+            customized itineraries to individual preferences.
+          </p>
+        </div>
+        <div id="cardContainer"></div>
+        <a href="" class="seeAll">see All</a>
+      </section>
+
+      <section class="video">
+        <h2 class="video title">Watch Our Memorable Trips</h2>
+        <iframe
+          src="https://www.youtube.com/embed/s3G2kLruJJo?si=iUPFb4MX4Ldii5rq"
+          title="YouTube video player"
+          frameborder="40"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section class="slider">
+        <div class="slider title">Popular Tour Offers</div>
+        <button id="prevBtn">Previous</button>
+        <div id="sliderCardContainer"></div>
+        <button id="nextBtn">Next</button>
+      </section>
+
+      <section class="blogs">
+        <h2 class="blogs title">Blogs</h2>
+        <div id="blogCardContainer" class="blog-card-container"></div>
+      </section>
+      <section class="bookTravel">
+        <h2 class="bookTravel title">Ready To Book A Trip?</h2>
+        <label for="startingLocation">Starting Location:</label>
+        <select id="startingLocation">
+          <option value="Rome, Italy">Rome, Italy</option>
+          <option value="Luxor City, Egypt">Luxor City, Egypt</option>
+          <option value="Paris, France">Paris, France</option>
+          <option value="Barcelona, Spain">Barcelona, Spain</option>
+          <option value="Tsavo, Kenya">Tsavo, Kenya</option>
+          <option value="Prague, Chequia">Prague, Chequia</option>
+          <option value="Shanghai, China">Shanghai, China</option>
+          <option value="Hanauma, Hawaii">Hanauma, Hawaii</option>
+        </select>
+
+        <label for="tourOffer">Choose a Tour Offer:</label>
+        <select id="tourOffer">
+          <!-- Add options for tour offers -->
+        </select>
+
+        <label for="tourDate">Choose Date:</label>
+        <input type="date" id="tourDate" />
+
+        <label for="numberOfPersons">Number of Persons:</label>
+        <select id="numberOfPersons">
+          <option value="1">1 person</option>
+          <option value="2">2 persons</option>
+          <option value="3">3 persons</option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <button onclick="bookTour()">Book Now</button>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footerdiv">
+        <div class="footerWrap1">
+          <div class="footerlinks">
+            <div class="desc">
+              <h3>ExploreEra</h3>
+              <p>Travel agency which helps you to plan your perfect holidays</p>
+              <h4>Follow us</h4>
+              <div class="logos">
+                <a href=""><img src="../.././src/Vector (14).svg" alt="" /></a>
+                <a href=""><img src="../.././src/Vector (13).svg" alt="" /></a>
+                <a href=""><img src="../.././src/Vector (12).svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <nav class="footerNav">
+            <h4>Links</h4>
+            <a href="" class="Home">Home</a>
+            <a href="" class="aboutUs">About us</a>
+            <a href="" class="blogs">Blogs</a>
+            <a href="" class="ourServices">Our services</a>
+            <a href="" class="ourOffers">Our offers</a>
+          </nav>
+        </div>
+
+        <div class="footerWrap2">
+          <div class="contact">
+            <h4>Contact us</h4>
+            <p>exploreera@gmail.com</p>
+            <p>555111222</p>
+          </div>
+          <div class="subscribe">
+            <h3>Subscribe news</h3>
+            <div class="input-container">
+              <input type="email" class="email-input" placeholder="email" />
+              <button class="action-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright 2024</div>
+    </footer>
+
+    <script type="module" src="./app.js" defer></script>
+  </body>
+</html>

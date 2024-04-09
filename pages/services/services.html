@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./services.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header backgroundImg">
+        <nav class="stickyHeaderNav transparent">
+          <a href="index.html">
+            <h1>ExploreEra</h1>
+          </a>
+          <a href="#" class="burgerMenu"></a>
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About us</a>
+            </li>
+            <li>
+              <a href="">Blogs</a>
+            </li>
+            <li>
+              <a href="">Our services</a>
+            </li>
+            <li>
+              <a href="">Our offers</a>
+            </li>
+            <li>
+              <a href=""> <img src="../../src/User.svg" alt="" /> </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="popup-container" id="popup-container">
+        <div class="popup-content">
+          <a href="signIn.html">Sign In</a>
+          <a href="signUp.html">Sign Up</a>
+          <nav class="navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#services">Our Services</a></li>
+              <li><a href="#offers">Our Offers</a></li>
+            </ul>
+          </nav>
+          <span class="close-btn" id="close-btn">X</span>
+        </div>
+      </div>
+      <div class="overlay" id="overlay"></div>
+    </header>
+    <main>
+      <section class="navigation">
+        <div class="container">
+          <nav>
+            <ul class="navigation-list">
+              <li>
+                <button class="active">Flights</button>
+              </li>
+              <li>
+                <button>Stays</button>
+              </li>
+              <li>
+                <button>Car rentals</button>
+              </li>
+              <li>
+                <button>Cruises</button>
+              </li>
+              <li>
+                <button>Attractions</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="section-filter">
+        <div class="filter-dropdowns">
+          <div class="dropdown">
+            <button class="dropbtn">
+              One Way<img src="../../src/arrowdown.svg" alt="" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#" id="roundtrip">Roundtrip </a>
+              <a href="#" id="oneway">One Way</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              1 Adult<img src="../../src/arrowdown.svg" alt="" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#" id="roundtrip">1 adults</a>
+              <a href="#" id="oneway">2 adults</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Economy <img src="../../src/arrowdown.svg" alt="" />
+            </button>
+            <div class="dropdown-content">
+              <a href="#" id="roundtrip">Economy</a>
+              <a href="#" id="oneway">business Class</a>
+            </div>
+          </div>
+        </div>
+        <div class="filter-inputs">
+          <input type="text" placeholder="From Tbilisi" class="from" />
+          <input type="text" placeholder="To Paris" class="To" />
+          <input type="date" placeholder="calendar" class="calendar" />
+          <button class="search">search</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footerdiv">
+        <div class="footerWrap1">
+          <div class="footerlinks">
+            <div class="desc">
+              <h3>ExploreEra</h3>
+              <p>Travel agency which helps you to plan your perfect holidays</p>
+              <h4>Follow us</h4>
+              <div class="logos">
+                <a href=""><img src="../.././src/Vector (14).svg" alt="" /></a>
+                <a href=""><img src="../.././src/Vector (13).svg" alt="" /></a>
+                <a href=""><img src="../.././src/Vector (12).svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <nav class="footerNav">
+            <h4>Links</h4>
+            <a href="" class="Home">Home</a>
+            <a href="" class="aboutUs">About us</a>
+            <a href="" class="blogs">Blogs</a>
+            <a href="" class="ourServices">Our services</a>
+            <a href="" class="ourOffers">Our offers</a>
+          </nav>
+        </div>
+
+        <div class="footerWrap2">
+          <div class="contact">
+            <h4>Contact us</h4>
+            <p>exploreera@gmail.com</p>
+            <p>555111222</p>
+          </div>
+          <div class="subscribe">
+            <h3>Subscribe news</h3>
+            <div class="input-container">
+              <input type="email" class="email-input" placeholder="email" />
+              <button class="action-button"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright 2024</div>
+    </footer>
+
+    <script type="module" src="./flights.js" defer></script>
+  </body>
+</html>

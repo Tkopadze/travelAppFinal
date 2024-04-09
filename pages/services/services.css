@@ -296,13 +296,11 @@ label {
   margin-right: 10px;
 }
 
-/* Style for price */
 .price {
   font-size: 20px;
   font-weight: bold;
 }
 
-/* Style for details button */
 .details {
   background-color: #ff8c3e;
   border: none;

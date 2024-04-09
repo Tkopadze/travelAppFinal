@@ -2,7 +2,7 @@
   "cardsData": [
     {
       "id": 1,
-      "photo": "../../../.././src/image2.svg",
+      "photo": "../.././src/image2.svg",
       "title": "Card 1",
       "description": "This is card 1 description."
     },
@@ -166,80 +166,70 @@
       "photo": "../.././src/image6blog3.svg",
       "description": "Description for Blog Post 6"
     }
-
   ],
-  "FlightsCards" :[
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-},
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-},
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-},
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-},
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-},
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-},
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-},
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-},
-{
-  "logoUrl":"https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
-  "Name": "Lufthansa",
-  "TakeOff":"12:00",
-  "Landing":"19:00",
-  "Price":"900$"
-
-}
+  "FlightsCards": [
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    },
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    },
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    },
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    },
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    },
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    },
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    },
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    },
+    {
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Lufthansa_Logo_2018_crane.svg",
+      "Name": "Lufthansa",
+      "TakeOff": "12:00",
+      "Landing": "19:00",
+      "Price": "900$"
+    }
   ]
 }

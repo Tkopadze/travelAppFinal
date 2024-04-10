@@ -130,8 +130,8 @@ a {
   .popup-container {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 68%;
     transform: translate(-50%, -50%);
     width: 184px;
     height: 271px;
@@ -164,20 +164,6 @@ a {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 999;
-  }
-
-  /* Show overlay when popup is displayed */
-  .popup-container {
-    display: none;
-    position: fixed;
-    top: 130px; /* Adjust this value to position the popup vertically */
-    left: 340px; /* Adjust this value to position the popup horizontally */
-    z-index: 1000; /* Ensure the popup is above other elements */
-    background-color: #fff; /* Background color of the popup */
-    border: 1px solid #ccc; /* Border around the popup */
-    padding: 20px; /* Padding inside the popup */
-    min-width: 300px; /* minimum width of the popup */
-    overflow: auto; /* Add scrollbar if content exceeds popup height */
   }
 
   .overlay.show {
@@ -446,6 +432,39 @@ a {
     justify-content: space-between;
     width: 60%;
   }
+  .bookTravel {
+    margin: 0px;
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 20px;
+  }
+  .dropdownWrap .drop-input {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  .dropdownWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .dropdownWrap select,
+  .dropdownWrap option,
+  .dropdownWrap input {
+    width: 100%;
+    min-height: 60px;
+    border-radius: 20px;
+    border: 0px;
+    padding: 20px;
+  }
+  .bookTour {
+    width: 90%;
+    border-radius: 20px;
+    min-height: 60px;
+    background-color: #ff6700;
+    border: 0px;
+  }
   .Links {
     display: flex;
     flex-direction: column;
@@ -506,7 +525,7 @@ a {
     margin: 40px 74px 10px;
   }
   .footerWrap1 {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     margin: 0px;
@@ -546,11 +565,47 @@ a {
     line-height: 28.13px;
     text-align: center;
   }
+  .header-nav {
+    display: none;
+  }
 }
 
 @media all and (min-width: 800px) {
-  .backgroundImg {
-    min-width: 800px;
+  .footerWrap1 {
+    flex-direction: row;
+  }
+  #cardContainer {
+    flex-wrap: nowrap;
+  }
+  .blog-card {
+    width: 30%;
+  }
+
+  .popup-content {
+    display: flex;
+    text-align: center;
+    flex-direction: row-reverse;
+  }
+  .burgerMenu {
+    display: none;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+  .header-nav nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-nav nav ul li a {
+    color: white;
+  }
+  .user {
+    background-image: url(./../../src/Vectoruser.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
   }
 }
 @media all and (min-width: 1920px) {
@@ -558,16 +613,10 @@ a {
     gap: 60px;
     padding: 20px 170px;
   }
+
   #cardContainer {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
-  }
-  iframe {
-    width: 1650px;
-    height: 500px;
-  }
-  .video {
-    margin-bottom: 10px;
   }
 }

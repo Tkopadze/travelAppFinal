@@ -16,6 +16,20 @@
         <nav class="stickyHeaderNav transparent">
           <a href="index.html"><h1>ExploreEra</h1></a>
           <a href="#" class="burgerMenu"></a>
+          <div class="header-nav">
+            <nav class="header-nav-wrap">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li>
+                  <a href="./../FlightsPage/flights.html">Our Services</a>
+                </li>
+                <li><a href="#offers">Our Offers</a></li>
+              </ul>
+            </nav>
+            <a href="#" class="user"></a>
+          </div>
         </nav>
 
         <div class="offerCard">
@@ -85,35 +99,39 @@
       </section>
       <section class="bookTravel">
         <h2 class="bookTravel title">Ready To Book A Trip?</h2>
-        <label for="startingLocation">Starting Location:</label>
-        <select id="startingLocation">
-          <option value="Rome, Italy">Rome, Italy</option>
-          <option value="Luxor City, Egypt">Luxor City, Egypt</option>
-          <option value="Paris, France">Paris, France</option>
-          <option value="Barcelona, Spain">Barcelona, Spain</option>
-          <option value="Tsavo, Kenya">Tsavo, Kenya</option>
-          <option value="Prague, Chequia">Prague, Chequia</option>
-          <option value="Shanghai, China">Shanghai, China</option>
-          <option value="Hanauma, Hawaii">Hanauma, Hawaii</option>
-        </select>
-
-        <label for="tourOffer">Choose a Tour Offer:</label>
-        <select id="tourOffer">
-          <!-- Add options for tour offers -->
-        </select>
-
-        <label for="tourDate">Choose Date:</label>
-        <input type="date" id="tourDate" />
-
-        <label for="numberOfPersons">Number of Persons:</label>
-        <select id="numberOfPersons">
-          <option value="1">1 person</option>
-          <option value="2">2 persons</option>
-          <option value="3">3 persons</option>
-          <!-- Add more options as needed -->
-        </select>
-
-        <button onclick="bookTour()">Book Now</button>
+        <div class="dropdownWrap">
+          <div class="drop-input">
+            <select id="startingLocation">
+              <option value="Rome, Italy">Your Starting Location</option>
+              <option value="Rome, Italy">Rome, Italy</option>
+              <option value="Luxor City, Egypt">Luxor City, Egypt</option>
+              <option value="Paris, France">Paris, France</option>
+              <option value="Barcelona, Spain">Barcelona, Spain</option>
+              <option value="Tsavo, Kenya">Tsavo, Kenya</option>
+              <option value="Prague, Chequia">Prague, Chequia</option>
+              <option value="Shanghai, China">Shanghai, China</option>
+              <option value="Hanauma, Hawaii">Hanauma, Hawaii</option>
+            </select>
+          </div>
+          <div class="drop-input">
+            <select id="tourOffer">
+              <option value="Hanauma, Hawaii">Choose a Tour Offer</option>
+            </select>
+          </div>
+          <div class="drop-input">
+            <input type="date" placeholder="Choos Date:" id="tourDate" />
+          </div>
+          <div class="drop-input">
+            <select id="numberOfPersons">
+              <option value="1">Persons</option>
+              <option value="1">1 person</option>
+              <option value="2">2 persons</option>
+              <option value="3">3 persons</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <button onclick="bookTour()" class="bookTour">Book Now</button>
+        </div>
       </section>
     </main>
 

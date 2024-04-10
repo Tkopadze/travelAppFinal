@@ -3,10 +3,16 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission
 
-    const firstName = document.getElementById("firstName").value;
+    const firstName = document.getElementById("username").value;
     const lastName = document.getElementById("lastName").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (password !== confirmPassword) {
+      alert("Passwords don't match!");
+      return; // Stop further execution
+    }
 
     const user = {
       firstName,
@@ -19,6 +25,7 @@ document
 
     alert("Account created successfully!");
 
+    // Redirect to another page
     window.location.href = "./../services/services.html";
   });
 

@@ -2,15 +2,21 @@ window.addEventListener("scroll", () => {
   const nav = document.querySelector(".stickyHeaderNav");
   const h1 = document.querySelector(".stickyHeaderNav h1");
   const burgerMenuColor = document.querySelector(".burgerMenu");
+  const li = document.querySelectorAll(".list");
+  const user = document.querySelector(".user");
 
   if (window.scrollY > 0) {
     nav.classList.add("scrolled");
     nav.classList.remove("transparent");
     h1.style.color = "black"; // Change text color to black
+    li.forEach((x) => (x.style.color = "black"));
+    user.style.fill = "black";
     burgerMenuColor.style.url = "black"; // Change SVG fill color to black
   } else {
     nav.classList.remove("scrolled");
     nav.classList.add("transparent");
+    li.forEach((x) => (x.style.color = "white"));
+    user.style.fill = "white";
     h1.style.color = "white"; // Change text color back to white
     burgerMenuColor.style.fill = "white"; // Change SVG fill color back to white
   }
@@ -33,6 +39,7 @@ function setCurrentPageStyle() {
     nav.classList.add("scrolled");
     nav.classList.remove("transparent");
     h1.style.color = "black"; // Change text color to black
+
     burgerMenuColor.style.url = "black"; // Change SVG fill color to black
     // header.classList.add("scrolled");
     // header.classList.remove("transparent");
@@ -116,11 +123,17 @@ fetch("../.././data.json")
 const burgerMenu = document.querySelector(".burgerMenu");
 const popupContainer = document.getElementById("popup-container");
 const closeBtn = document.getElementById("close-btn");
+const burgerMenuUser = document.querySelector(".user");
+const navigation = document.querySelector(".navigation");
 
 // Add event listener to burger menu for opening the popup
 burgerMenu.addEventListener("click", (event) => {
   event.preventDefault(); // Prevent default anchor tag behavior
   popupContainer.style.display = "flex";
+});
+burgerMenuUser.addEventListener("click", () => {
+  popupContainer.style.display = "flex";
+  navigation.style.display = "none";
 });
 
 // Add event listener to close button for closing the popup

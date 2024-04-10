@@ -18,6 +18,8 @@ window.addEventListener("scroll", () => {
 });
 
 function setCurrentPageStyle() {
+  const li = document.querySelectorAll(".list");
+  const user = document.querySelector(".user");
   const currentUrl = window.location.href;
   const isSignInPage = currentUrl.includes("signIn.html");
   const isSignUpPage = currentUrl.includes("signUp.html");
@@ -33,7 +35,10 @@ function setCurrentPageStyle() {
     nav.classList.add("scrolled");
     nav.classList.remove("transparent");
     h1.style.color = "black"; // Change text color to black
-    burgerMenuColor.style.url = "black"; // Change SVG fill color to black
+    burgerMenuColor.style.url = "black";
+    li.forEach((x) => (x.style.color = "black"));
+    user.style.fill = "black";
+    // Change SVG fill color to black
     // header.classList.add("scrolled");
     // header.classList.remove("transparent");
   }
@@ -44,13 +49,18 @@ setCurrentPageStyle();
 const burgerMenu = document.querySelector(".burgerMenu");
 const popupContainer = document.getElementById("popup-container");
 const closeBtn = document.getElementById("close-btn");
+const navigation = document.querySelector(".navigation");
+const burgerMenuUser = document.querySelector(".user");
 
 // Add event listener to burger menu for opening the popup
 burgerMenu.addEventListener("click", (event) => {
   event.preventDefault(); // Prevent default anchor tag behavior
   popupContainer.style.display = "flex";
 });
-
+burgerMenuUser.addEventListener("click", () => {
+  popupContainer.style.display = "flex";
+  navigation.style.display = "none";
+});
 // Add event listener to close button for closing the popup
 closeBtn.addEventListener("click", () => {
   popupContainer.style.display = "none";
@@ -89,3 +99,11 @@ window.addEventListener("click", function (event) {
     termsPopup.style.display = "none";
   }
 });
+function signIn() {
+  const submitUser = document.querySelector(".submit");
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const localInfo = localStorage.getItem("user");
+  var obj = json(localInfo);
+  submitUser.addEventListener((x) => console.log(obj));
+}

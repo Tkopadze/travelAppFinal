@@ -25,8 +25,7 @@ document
 
     alert("Account created successfully!");
 
-    // Redirect to another page
-    window.location.href = "./../services/services.html";
+    window.location.href = "../signInPage/signIn.html";
   });
 
 window.addEventListener("scroll", () => {
@@ -55,6 +54,8 @@ function setCurrentPageStyle() {
   const nav = document.querySelector(".stickyHeaderNav");
   const h1 = document.querySelector(".stickyHeaderNav h1");
   const burgerMenuColor = document.querySelector(".burgerMenu");
+  const li = document.querySelectorAll(".list");
+  const user = document.querySelector(".user");
 
   if (isSignInPage || isSignUpPage) {
     document.querySelector(".backgroundImg").style.backgroundImage = "none";
@@ -63,6 +64,9 @@ function setCurrentPageStyle() {
     nav.classList.remove("transparent");
     h1.style.color = "black";
     burgerMenuColor.style.url = "black";
+
+    li.forEach((x) => (x.style.color = "black"));
+    user.style.fill = "black";
   }
 }
 
@@ -71,6 +75,13 @@ setCurrentPageStyle();
 const burgerMenu = document.querySelector(".burgerMenu");
 const popupContainer = document.getElementById("popup-container");
 const closeBtn = document.getElementById("close-btn");
+const burgerMenuUser = document.querySelector(".user");
+const navigation = document.querySelector(".navigation");
+
+burgerMenuUser.addEventListener("click", () => {
+  popupContainer.style.display = "flex";
+  navigation.style.display = "none";
+});
 
 // Add event listener to burger menu for opening the popup
 burgerMenu.addEventListener("click", (event) => {

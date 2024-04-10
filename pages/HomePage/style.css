@@ -592,21 +592,27 @@ a {
   .header-nav {
     display: flex;
     align-items: center;
+    margin: 0px;
+    justify-content: space-around;
+    width: 60%;
+    padding-right: 100px;
+  }
+  .header-nav-wrap {
+    margin: 0px;
+    width: -webkit-fill-available;
   }
   .header-nav nav ul {
     display: flex;
     flex-direction: row;
+    list-style: none;
   }
   .header-nav nav ul li a {
     color: white;
   }
-  .user {
-    background-image: url(./../../src/Vectoruser.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* .user {
     width: 30px;
     height: 30px;
-  }
+  } */
 }
 @media all and (min-width: 1920px) {
   main {
